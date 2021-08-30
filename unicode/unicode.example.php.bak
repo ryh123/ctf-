@@ -1,0 +1,21 @@
+<?php
+/**
+ *  Demo
+ * 
+ * @author wang chong(wangchong1985@gmail.com)
+ * @link http://www.wangchong.org
+ * @version 1.0.0 (2011-04-15)
+ * @package php-Unicode
+ */
+
+include 'unicode.class.php';
+
+$str = 'U+8fd9U+662fU+4e00U+4e2aU+6d4bU+8bd5U+44U+65U+6dU+6fU+21U+7eU+ff01U+77U+61U+6eU+67U+63U+68U+6fU+6eU+67U+31U+39U+38U+35U+40U+67U+6dU+61U+69U+6cU+2eU+63U+6fU+6d';
+
+$convert = new Unicode();
+
+//convert to Unicode
+//var_dump($str = $convert->str_to_unicode($str, 'UTF-8'));
+
+//convert to UTF-8
+var_dump($str = $convert->str_from_unicode($str, 'UTF-8'));
